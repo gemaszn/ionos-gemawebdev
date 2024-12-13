@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Vemka";
+    src: url(/assets/fonts/Vemka/VEMKA.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Vemka;
+}
+
+.logo{
+    flex: 1;
+    aspect-ratio: 1/1;
+    max-width: 120px;
+    background-image: url(/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nav-bar{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+
+        li {
+
+            a{
+                text-decoration: none;
+                color: #FFFAE6;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+.active{
+    color: #E38E49;
+    background-color: #FFFAE6;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+}
+
+.hero-section{
+    height: 100vh;
+    background-image: url(/assets/img/descarga.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-content{
+    padding-left: 4rem;
+}
+
+h1{
+    font-family: Vemka;
+    padding-top: 5rem;
+    font-size: 7rem;
+    color: #E38E49;
+}
+
+h2{
+    color: #FFFAE6;
+    font-size: 3rem;
+    max-width: 800px;
+}
+
+.admin-content{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.admin-text{
+    flex: 1;
+}
+
+.admin-pic{
+    flex: 1;
+    aspect-ratio: 16/9;
+    background-image: url(/assets/img/admin-pic.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
